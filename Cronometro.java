@@ -90,7 +90,7 @@ public class Cronometro implements Runnable {
 			tiempo.setText(minutos+":"+segundos);
 				if(minutos == 0 && segundos == 0){
 					try{
-						FileInputStream sonido = new FileInputStream("//Users//saysrodriguez//Documents//Java//pomodoro//alarma.mp3");
+						FileInputStream sonido = new FileInputStream("alarma.mp3");
 						BufferedInputStream bis = new BufferedInputStream(sonido);
 						Player player = new Player(bis);
 						player.play();
