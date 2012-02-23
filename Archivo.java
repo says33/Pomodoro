@@ -10,7 +10,7 @@ public class Archivo{
 	public void insertarTexto(String texto)throws IOException{
 		RandomAccessFile archivo;
 		
-		archivo = new RandomAccessFile("/Users/saysrodriguez/Documents/Java/pomodoro/log.txt", "rw");
+		archivo = new RandomAccessFile("log.txt", "rw");
 		archivo.seek(archivo.length());
 		try{
 			archivo.writeBytes(texto);
